@@ -1,0 +1,19 @@
+{
+    "name": "soil/event-bundle",
+    "version": "0.0.2",
+    "minimum-stability": "dev",
+    "dist": {
+        "url": "https://github.com/soilby/event-bundle",
+        "type": "vcs"
+    },
+    "autoload": {
+        "psr-4": {
+            "Soil\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "symfony/symfony": "2.6.*",
+        "soil/event-component": "dev-master"
+    }
+}
