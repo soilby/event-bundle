@@ -9,7 +9,10 @@
     "autoload": {
         "psr-4": {
             "Soil\\": "src"
-        }
+        },
+        "classmap": [
+            "./SoilEventBundle.php"
+        ]
     },
     "require": {
         "php": ">=5.4",
