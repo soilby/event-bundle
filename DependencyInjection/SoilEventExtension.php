@@ -27,7 +27,8 @@ class SoilEventExtension extends Extension
         $loader->load('services.yml');
 
         $eventLoggerDef = $container->getDefinition('soil_event.service.event_logger');
-        $eventLoggerDef->addArgument($config['ontology_config'], $config['carrier_config']);
+        $eventLoggerDef->addArgument($config['ontology_config']);
+        $eventLoggerDef->addArgument($config['carrier_config']);
 
         $carrierServiceId = $config['carrier_config']['carrier_service'];
         if (!$container->has($carrierServiceId))    {
