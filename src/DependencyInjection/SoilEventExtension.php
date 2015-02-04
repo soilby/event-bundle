@@ -24,5 +24,9 @@ class SoilEventExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        var_dump($config);
+
+//        $eventLoggerDef = $container->getDefinition('soil_event.service.event_logger');
     }
 }

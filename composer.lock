@@ -520,7 +520,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/soilby/event-component.git",
-                "reference": "78a329313e9b134982bdc0f564354bd2946faec4"
+                "reference": "043beea3a1677ea76c6ba14d9af171d1e4e48c52"
             },
             "dist": {
                 "type": "vcs",
@@ -539,7 +539,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-02-04 18:20:42"
+            "time": "2015-02-04 20:12:25"
         },
         {
             "name": "symfony/symfony",

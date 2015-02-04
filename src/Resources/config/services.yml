@@ -1,1 +1,9 @@
 services:
+    soil_event.service.event_logger:
+        class: Soilby\EventComponent\Service\EventLogger
+        arguments: []
+
+
+    soil_event.service.gearman_client:
+        class: Soilby\EventComponent\Service\GearmanClient
+        arguments: []
