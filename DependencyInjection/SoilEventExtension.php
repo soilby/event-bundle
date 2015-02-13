@@ -31,19 +31,10 @@ class SoilEventExtension extends Extension
         $eventLoggerDef->addArgument($config['carrier_config']);
 
         $carrierServiceId = $config['carrier_config']['carrier_service'];
-        if (!$container->has($carrierServiceId))    {
-            throw new \Exception(
-                "Carrier service for EventLogger specified under
-                carrier_config.carrier_service = $carrierServiceId is missing");
-        }
         $reference = new Reference($carrierServiceId);
         $eventLoggerDef->addMethodCall('setLogCarrier', [$reference]);
 
         $urinatorServiceId = $config['urinator_service'];
-        if (!$container->has($urinatorServiceId))    {
-            throw new \Exception(
-                "URInator service for EventLogger specified under urinator_service = $urinatorServiceId is missing");
-        }
         $reference = new Reference($urinatorServiceId);
         $eventLoggerDef->addMethodCall('setUrinator', [$reference]);
 
