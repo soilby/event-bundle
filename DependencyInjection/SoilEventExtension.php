@@ -30,13 +30,9 @@ class SoilEventExtension extends Extension
         $eventLoggerDef->addArgument($config['ontology_config']);
         $eventLoggerDef->addArgument($config['carrier_config']);
 
-        $carrierServiceId = $config['carrier_config']['carrier_service'];
-        $reference = new Reference($carrierServiceId);
-        $eventLoggerDef->addMethodCall('setLogCarrier', [$reference]);
+        $container->prependExtensionConfig('soil_event', $config);
+        $container->setParameter('soil_event_config', $config);
 
-        $urinatorServiceId = $config['urinator_service'];
-        $reference = new Reference($urinatorServiceId);
-        $eventLoggerDef->addMethodCall('setUrinator', [$reference]);
 
     }
 }
