@@ -17,7 +17,7 @@ class SetConfiguredServicesCompilerPass implements CompilerPassInterface {
 
     public function process(ContainerBuilder $container)
     {
-        if (!$container->hasDefinition('soil_event_processor.processor_selector')) {
+        if (!$container->hasDefinition('soil_event.service.event_logger')) {
             return;
         }
 
