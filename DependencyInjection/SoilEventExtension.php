@@ -32,6 +32,7 @@ class SoilEventExtension extends Extension
 
         $container->prependExtensionConfig('soil_event', $config);
         $container->setParameter('soil_event_config', $config);
+        $container->setParameter('soil_event.gearman_endpoint_url', $config['gearman']['endpoint_url']);
 
 
     }

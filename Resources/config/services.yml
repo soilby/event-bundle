@@ -7,3 +7,7 @@ services:
     soil_event.service.gearman_client:
         class: Soilby\EventComponent\Service\GearmanClient
         arguments: []
+
+    soil_event.service.http_gearman_client:
+        class: Soilby\EventComponent\Service\HttpGearmanClient
+        arguments: [%soil_event.gearman_endpoint_url%]

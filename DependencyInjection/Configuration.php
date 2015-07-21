@@ -45,6 +45,8 @@ class Configuration implements ConfigurationInterface
                     ->children()
                         ->scalarNode('serverIP')->defaultValue('127.0.0.1')->end()
                         ->scalarNode('serverPort')->defaultValue(4730)->end()
+                        ->scalarNode('client_type')->defaultValue('native')->end()
+                        ->scalarNode('endpoint_url')->defaultValue('http://semantic.talaka.soil.by/endpoint/put_job')->end()
                     ->end()
                 ->end()
                 ->scalarNode('urinator_service')->defaultValue('URInator')->end()
