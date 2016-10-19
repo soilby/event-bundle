@@ -1,7 +1,5 @@
 {
     "name": "soil/event-bundle",
-    "version": "0.0.2",
-    "minimum-stability": "dev",
     "dist": {
         "url": "https://github.com/soilby/event-bundle",
         "type": "vcs"
@@ -13,6 +11,6 @@
     },
     "require": {
         "php": ">=5.4",
-        "soil/event-component": "dev-master"
+        "soil/event-component": "@dev"
     }
 }
